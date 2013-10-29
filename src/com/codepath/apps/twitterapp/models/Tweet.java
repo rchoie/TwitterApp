@@ -86,7 +86,7 @@ public class Tweet extends BaseModel {
             Tweet tweet = Tweet.fromJson(tweetJson);
 
             if (tweet != null) {
-            	tweet.save();
+            	//tweet.save();
                 tweets.add(tweet);
             }
         }

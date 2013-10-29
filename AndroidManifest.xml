@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="12"
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -50,6 +50,14 @@
         <activity
             android:name="com.codepath.apps.twitterapp.ComposeActivity"
             android:label="@string/title_activity_compose" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.twitterapp.ProviderActivity"
+            android:label="@string/title_activity_provider" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.twitterapp.ProfileActivity"
+            android:label="@string/title_activity_profile" >
         </activity>
     </application>
 

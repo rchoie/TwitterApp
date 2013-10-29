@@ -1,8 +1,11 @@
 package com.codepath.apps.twitterapp.models;
 
+import java.io.Serializable;
+
 import org.json.JSONObject;
 
 public class User extends BaseModel {
+
 	public String getName() {
 		return getString("name");
 	}
@@ -31,6 +34,10 @@ public class User extends BaseModel {
 		return getInt("friends_count");
 	}
 
+	public String getTagline() {
+		return getString("description");
+	}
+	
 	public static User fromJson(JSONObject json) {
 		User u = new User();
 
